@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsaneGYM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="blur">
+        <div class="content1">
+            <h2>Insane Gym <br>
+            Página Oficial de Insane Gym 
+            Sí eres administrador acercate a tu despacho para aceder al programa de Administración.
+            Sí eres cliente accede a la página par clientes en: <a href="#">htpps //www.insanegym.com/login </a>
+            <br>
+            <a href="#" onclick="toggle1()">Obtener información</a>
+            </h2>
+            
+            <img src="../img/logo.png" alt="">
+        </div>
+    </div>
+
+    <img src="../img/logo.png">
+
+    <div id="popup">
+        <h2>Página Web.</h2>
+        <p>Esta página fue creada para complementar el proyecto de programación modular. Por: <br> Moreno Estrada Santiago <br> Jimenez Ramirez Francisco <br> Muñoz Remedios Ian Abid <br> 4IV11.</p>
+        <a href="#" onclick="toggle1()">Close</a>
+    </div>
+
+
+    <script type="text/javascript">
+        function toggle1(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>   
+</body>
+</html>
